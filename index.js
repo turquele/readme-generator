@@ -75,7 +75,31 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
+// question the user
+inquirer
+.prompt(questions)
+.then((response) => {
+  // Construction of the content in the variable readmeContent
+  let readmeContent = ""
+  if (response.title) {
+    readmeContent += `# ${response.title}
+    [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+    `
+  };
+  if (response.description) {
+    readmeContent += `# ${response.description}
+    `
+  };
 
+
+
+
+  
+
+
+
+  writeToFile('README.md', readmeContent)
+});
 }
 
 // function call to initialize program
