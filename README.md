@@ -6,9 +6,13 @@ readme-generator is a program to facilitate the quick creation of professional R
 
 ## Table of content
 - Installation
+- Usage
 - License
-## Questions
-Download the repository to your computer, navigate with the terminal to the new created directory and install dependencies using the command npm -i. Run the program using node index.js
+## Installation
+Download the repository to one local folder in your computer. Open a terminal in the recently created directory. Install all depencies running the command npm i. Run the program with the command node index.js
+
+## License
+GLPg
 
 ## Questions
 e-mail: [jose.m.alonso.g@gmail.com](mailto:jose.m.alonso.g@gmail.com)

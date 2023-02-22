@@ -37,9 +37,8 @@ ${response.description}
 `
     };
 
-
-    if (response.email) {
-      readmeContent += `## Questions
+    if (response.installation) {
+      readmeContent += `## Installation
 ${response.installation}
 
 `
@@ -54,6 +53,12 @@ ${response.contribution}
     if (response.test) {
       readmeContent += `## Tests
 ${response.test}
+
+`
+    };
+    if (response.license) {
+      readmeContent += `## License
+${response.license}
 
 `
     };
