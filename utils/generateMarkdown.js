@@ -36,6 +36,10 @@ ${response.description}
       readmeContent += `- [License](#license)
 `
     };
+    if (response.email || response.github) {
+      readmeContent += `- [Questions](#questions)
+`
+    };
 
     if (response.installation) {
       readmeContent += `## Installation
