@@ -17,29 +17,36 @@ ${response.description}
     readmeContent += `## Table of content
 `
     if (response.installation) {
-      readmeContent += `- Installation
+      readmeContent += `- [Installation](#installation)
 `
     };
     if (response.usage) {
-      readmeContent += `- Usage
+      readmeContent += `- [Usage](#usage)
 `
     };
-    if (response.caontribution) {
-      readmeContent += `- How to Contribute
+    if (response.contribution) {
+      readmeContent += `- [How to Contribute](#how-to-contribute)
 `
     };
     if (response.test) {
-      readmeContent += `- Tests
+      readmeContent += `- [Tests](#tests)
 `
     };
     if (response.license) {
-      readmeContent += `- License
+      readmeContent += `- [License](#license)
 `
     };
 
     if (response.installation) {
       readmeContent += `## Installation
 ${response.installation}
+
+`
+    };
+
+    if (response.usage) {
+      readmeContent += `## Usage
+${response.usage}
 
 `
     };
